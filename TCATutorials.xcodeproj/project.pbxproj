@@ -11,6 +11,8 @@
 		23A09D852A6BA246008E4888 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A09D842A6BA246008E4888 /* ContentView.swift */; };
 		23A09D872A6BA247008E4888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A09D862A6BA247008E4888 /* Assets.xcassets */; };
 		23A09D8A2A6BA247008E4888 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A09D892A6BA247008E4888 /* Preview Assets.xcassets */; };
+		23A09D922A6BA558008E4888 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 23A09D912A6BA558008E4888 /* ComposableArchitecture */; };
+		23A09D942A6BB850008E4888 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A09D932A6BB850008E4888 /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		23A09D842A6BA246008E4888 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23A09D862A6BA247008E4888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A09D892A6BA247008E4888 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23A09D932A6BB850008E4888 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A09D922A6BA558008E4888 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				23A09D822A6BA246008E4888 /* TCATutorialsApp.swift */,
 				23A09D842A6BA246008E4888 /* ContentView.swift */,
+				23A09D932A6BB850008E4888 /* CounterFeature.swift */,
 				23A09D862A6BA247008E4888 /* Assets.xcassets */,
 				23A09D882A6BA247008E4888 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = TCATutorials;
+			packageProductDependencies = (
+				23A09D912A6BA558008E4888 /* ComposableArchitecture */,
+			);
 			productName = TCATutorials;
 			productReference = 23A09D7F2A6BA246008E4888 /* TCATutorials.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 23A09D762A6BA246008E4888;
+			packageReferences = (
+				23A09D902A6BA558008E4888 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 23A09D802A6BA246008E4888 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A09D942A6BB850008E4888 /* CounterFeature.swift in Sources */,
 				23A09D852A6BA246008E4888 /* ContentView.swift in Sources */,
 				23A09D832A6BA246008E4888 /* TCATutorialsApp.swift in Sources */,
 			);
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23A09D902A6BA558008E4888 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/pointfreeco/swift-composable-architecture#Installation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23A09D912A6BA558008E4888 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23A09D902A6BA558008E4888 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23A09D772A6BA246008E4888 /* Project object */;
 }
